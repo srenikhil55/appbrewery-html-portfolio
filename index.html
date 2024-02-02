@@ -7,11 +7,10 @@
 
 <body>
   <header>
-   <h1> You have 220,482 points. (-50% points and -100,000 points/MCPC for forgetting my library card, as well as past week's books)</h1> 
-   <h2> Buy 10 Mario Coin Pusher credits for 1,000,000 points?</h2> 
-   <h3> Redeem 5,000,000 points for a $5 Walmart Gift Card?</h3> 
-   <h4> Redeem 1,000,000,000 points for $1,000 College Student Loan Repayment?</h4> 
-   <h5> Redeem 6,013,500 points for a 500 INR Gift Card?</h5>
+   <h1> Buy 10 Mario Coin Pusher credits for 1,000,000 points?</h1> 
+   <h2> Redeem 5,000,000 points for a $5 Walmart Gift Card?</h2> 
+   <h3> Redeem 1,000,000,000 points for $1,000 College Student Loan Repayment?</h3> 
+   <h4> Redeem 6,013,500 points for a 500 INR Gift Card?</h4>
   </header>
 <nav>
   <ul>
@@ -20,6 +19,21 @@
     <li><a href="#">Spend Points</a></li>
   </ul>
 </nav>
-<main></main>
+<main>
+  <h2>Welcome to the UniWallet</h2> 
+  <p>This is a website which you can redeem points for exciting prizes in.</p>
+  <h1 id="PointDisplay">You have 224120 points.</h1>
+  <button onclick="appendCSS()" id="button">Get 4 Points</button>
+</main>
+<footer> 
+  <p>Copyright (c) 2016-2024 UniWallet. All rights reserved.</p>
+</footer>
+<script>
+  let counter = 224120; 
+  function appendCSS() { 
+    counter+=4;
+    document.getElementById('PointDisplay').innerText = "You have " + counter + " points.";
+  }
+</script>
 </body>
 </html>
