@@ -23,7 +23,7 @@
   <h2>Welcome to the UniWallet</h2> 
   <p>This is a website which you can redeem points for exciting prizes in.</p>
   <h1 id="PointDisplay">You have 246576 points.</h1>
-  <button onclick="appendCSS()" id="button">Get 4 Points</button>
+  <button onclick="appendCSS()" id="button">Get a Point</button>
 </main>
 <footer> 
   <p>Copyright (c) 2016-2024 UniWallet. All rights reserved.</p>
@@ -31,7 +31,7 @@
 <script>
   let counter = 246576; 
   function appendCSS() { 
-    counter+=4;
+    counter+=1;
     document.getElementById('PointDisplay').innerText = "You have " + counter + " points.";
   }
 </script>
